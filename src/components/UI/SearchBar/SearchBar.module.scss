@@ -1,0 +1,23 @@
+.wrapper {
+   @apply flex items-center md:max-w-[490px] h-11 md:px-5
+   md:gap-4 max-sm:gap-2 gap-5 md:rounded-[70px] md:border
+   md:border-grayBorder w-full placeholder:text-sm
+   font-medium tracking-tight md:h-12;
+}
+.search {
+   @apply text-xl cursor-pointer;
+}
+.input {
+   @apply w-full grow;
+}
+.filters {
+   @apply md:text-xl text-lg cursor-pointer max-md:rounded-[10px]
+   max-md:border max-md:border-grayBorder 
+   max-md:h-full max-md:basis-11 max-md:flex
+   max-md:justify-center max-md:items-center
+   max-md:shrink-0;
+}
+.search-block {
+   @apply h-full flex grow items-center border border-grayBorder
+   sm:px-4 px-2 rounded-[10px] gap-2;
+}

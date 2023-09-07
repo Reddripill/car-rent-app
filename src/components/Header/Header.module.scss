@@ -1,0 +1,41 @@
+.header {
+   @apply absolute w-full h-[124px] top-0 left-0;
+}
+.wrapper {
+   @apply fixed w-full md:h-[124px] top-0 left-0 z-50 flex
+   items-center md:border-b md:border-grayBorder max-md:py-8;
+}
+.container {
+   @apply w-full flex items-center md:justify-between ml-16 mr-8
+   max-md:flex-col max-md:gap-y-8 max-lg:mx-6 md:gap-x-2;
+}
+.top {
+   @apply w-full h-full flex items-center justify-between;
+}
+.left {
+   @apply flex items-center gap-[calc((64/702)*100%)] shrink
+   h-full grow basis-auto;
+}
+.logo {
+   @apply text-primary uppercase md:text-[32px] font-bold
+   md:leading-normal tracking-[-0.96px] text-2xl leading-7;
+}
+.profil {
+   @apply flex items-center lg:gap-8 md:gap-4;
+}
+.actions {
+   @apply flex items-center lg:gap-5 md:gap-3;
+}
+.action {
+   @apply w-11 h-11 rounded-full flex items-center justify-center
+   border border-grayBorder cursor-pointer;
+}
+.action > svg {
+   @apply text-lg text-secondary;
+}
+.user {
+   @apply shrink-0;
+}
+.user img {
+   @apply max-md:h-9 max-md:w-9;
+}
