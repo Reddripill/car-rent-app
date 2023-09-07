@@ -19,7 +19,7 @@ const Header = () => {
                {isMobile ? (
                   <>
                      <div className={styles.top}>
-                        <Link href="/" className={styles.logo}>
+                        <Link href="/" className="logo">
                            morent
                         </Link>
                         <div className={styles.user}>
@@ -38,7 +38,7 @@ const Header = () => {
                ) : (
                   <>
                      <div className={styles.left}>
-                        <Link href="/" className={styles.logo}>
+                        <Link href="/" className="logo">
                            morent
                         </Link>
                         <SearchBar />

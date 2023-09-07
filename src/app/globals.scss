@@ -9,3 +9,10 @@ body {
 input:focus {
    @apply outline-none;
 }
+.logo {
+   @apply text-primary uppercase md:text-[32px] font-bold
+   md:leading-normal tracking-[-0.96px] text-2xl leading-7;
+}
+.container {
+   @apply max-w-[1285px] px-[15px] mx-auto;
+}

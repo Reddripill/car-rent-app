@@ -7,7 +7,7 @@
 }
 .container {
    @apply w-full flex items-center md:justify-between ml-16 mr-8
-   max-md:flex-col max-md:gap-y-8 max-lg:mx-6 md:gap-x-2;
+   max-md:flex-col max-md:gap-y-8 max-lg:mx-[15px] md:gap-x-2;
 }
 .top {
    @apply w-full h-full flex items-center justify-between;
@@ -15,10 +15,6 @@
 .left {
    @apply flex items-center gap-[calc((64/702)*100%)] shrink
    h-full grow basis-auto;
-}
-.logo {
-   @apply text-primary uppercase md:text-[32px] font-bold
-   md:leading-normal tracking-[-0.96px] text-2xl leading-7;
 }
 .profil {
    @apply flex items-center lg:gap-8 md:gap-4;
