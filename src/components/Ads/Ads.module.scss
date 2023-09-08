@@ -1,0 +1,45 @@
+.wrapper {
+   @apply flex justify-between pt-8 md:flex-row flex-wrap
+   gap-y-4;
+}
+.item {
+   @apply relative w-[calc((640/1315)*100%)] 
+   pb-[calc((360/1315)*100%)] rounded-[10px] overflow-hidden
+   max-md:basis-full max-md:pb-[270px];
+}
+.item_dark {
+   @apply max-md:hidden;
+}
+.content {
+   @apply absolute top-[calc((24/360)*100%)]
+   left-[calc((24/640)*100%)] lg:max-w-[270px]
+   z-[3];
+}
+.title {
+   @apply text-white xl:leading-normal font-semibold
+   xl:-tracking-[0.96px] -tracking-[0.32px] lg:text-[32px] 
+   md:text-lg text-base leading-8 xl:mb-4 mb-3;
+}
+.text {
+   @apply text-white leading-normal font-medium
+   -tracking-[0.32px] xl:mb-5 mb-4 lg:text-base
+   md:text-sm text-xs max-lg:max-w-[230px];
+}
+.background {
+   @apply absolute top-0 left-0 h-full w-full z-[1];
+}
+.car {
+   @apply absolute bottom-[calc((10/360)*100%)]
+   right-[calc((95/640)*100%)] z-[2]
+   h-[calc((115/360)*100%)] w-[calc((405/640)*100%)]
+   max-md:h-[120px] max-md:w-[400px] max-md:bottom-0
+   max-sm:w-[260px] max-sm:h-[80px]
+   max-md:left-1/2 max-md:-translate-x-1/2;
+}
+.car-wrapper {
+   @apply relative h-full w-full;
+}
+/* .car-wrapper img {
+   @apply object-cover;
+}
+ */

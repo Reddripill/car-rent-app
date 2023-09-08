@@ -1,0 +1,11 @@
+.button {
+   @apply h-11 md:min-w-[120px] min-w-[100px] rounded-[4px] 
+   px-5 font-semibold text-white leading-normal -tracking-[0.32px]
+   md:text-base text-xs;
+}
+.button_dark {
+   @apply bg-bluePrimary;
+}
+.button_light {
+   @apply bg-information;
+}

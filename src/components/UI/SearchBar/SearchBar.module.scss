@@ -8,7 +8,7 @@
    @apply text-xl cursor-pointer;
 }
 .input {
-   @apply w-full grow;
+   @apply w-full grow bg-transparent;
 }
 .filters {
    @apply md:text-xl text-lg cursor-pointer max-md:rounded-[10px]

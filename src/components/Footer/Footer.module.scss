@@ -31,7 +31,8 @@
    max-md:gap-8;
 }
 .references {
-   @apply flex gap-[60px] max-md:order-1 max-md:basis-full;
+   @apply flex gap-[60px] max-md:order-1 max-md:basis-full
+   max-md:justify-between;
 }
 .text {
    @apply text-darkSecondary leading-normal font-semibold

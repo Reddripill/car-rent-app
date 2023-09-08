@@ -18,22 +18,19 @@ const Header = () => {
             <div className={styles.container}>
                {isMobile ? (
                   <>
-                     <div className={styles.top}>
-                        <Link href="/" className="logo">
-                           morent
+                     <Link href="/" className="logo">
+                        morent
+                     </Link>
+                     <div className={styles.user}>
+                        <Link href="/">
+                           <Image
+                              src="/user.png"
+                              alt="User Photo"
+                              width={44}
+                              height={44}
+                           />
                         </Link>
-                        <div className={styles.user}>
-                           <Link href="/">
-                              <Image
-                                 src="/user.png"
-                                 alt="User Photo"
-                                 width={44}
-                                 height={44}
-                              />
-                           </Link>
-                        </div>
                      </div>
-                     <SearchBar />
                   </>
                ) : (
                   <>
@@ -75,6 +72,13 @@ const Header = () => {
                )}
             </div>
          </div>
+         {isMobile && (
+            <div className="absolute w-full left-0 top-24 bg-white pb-[148px]">
+               <div className="container">
+                  <SearchBar />
+               </div>
+            </div>
+         )}
       </header>
    );
 };

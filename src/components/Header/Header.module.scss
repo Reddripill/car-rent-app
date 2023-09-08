@@ -1,17 +1,18 @@
 .header {
-   @apply absolute w-full h-[124px] top-0 left-0;
+   @apply absolute w-full md:h-[124px] h-24 top-0 left-0;
 }
 .wrapper {
-   @apply fixed w-full md:h-[124px] top-0 left-0 z-50 flex
-   items-center md:border-b md:border-grayBorder max-md:py-8;
+   @apply fixed w-full md:h-[124px] h-24 top-0 left-0 z-50 flex
+   items-center md:border-b md:border-grayBorder max-md:py-8
+   bg-white;
 }
 .container {
-   @apply w-full flex items-center md:justify-between ml-16 mr-8
-   max-md:flex-col max-md:gap-y-8 max-lg:mx-[15px] md:gap-x-2;
+   @apply w-full flex items-center justify-between ml-16 mr-8
+   max-lg:mx-[15px] md:gap-x-2;
 }
-.top {
+/* .top {
    @apply w-full h-full flex items-center justify-between;
-}
+} */
 .left {
    @apply flex items-center gap-[calc((64/702)*100%)] shrink
    h-full grow basis-auto;
